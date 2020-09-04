@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:drawable="@color/colorpopoki"/>
+    <item>
+        <bitmap android:src="@mipmap/Logo_Popoki_blanco-01.png"
+            android:gravity="center"/>
+    </item>
+</layer-list>
