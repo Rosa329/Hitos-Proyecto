@@ -2,7 +2,7 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
 <item android:drawable="@color/colorpopoki"/>
     <item>
-        <bitmap android:src="@mipmap/Logo_Popoki_blanco-01.png"
+        <bitmap android:src="@mipmap/ic_popokiblanco3"
             android:gravity="center"/>
     </item>
 </layer-list>

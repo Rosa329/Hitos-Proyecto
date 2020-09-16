@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.hitos_proyecto.login.ui.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_registroFragment"
+            app:destination="@id/registroFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_productosFragment"
+            app:destination="@id/productosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registroFragment"
+        android:name="com.example.hitos_proyecto.registro.ui.RegistroFragment"
+        android:label="RegistroFragment" >
+        <action
+            android:id="@+id/action_registroFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/productosFragment"
+        android:name="com.example.hitos_proyecto.listaProductos.ui.ProductosFragment"
+        android:label="fragment_productos"
+        tools:layout="@layout/fragment_productos" />
+</navigation>
