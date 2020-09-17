@@ -4,23 +4,23 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.hitos_proyecto.listaProductos.domain.ObtenerProductosUseCase
-import com.example.hitos_proyecto.listaProductos.domain.model.Productos
+import com.example.hitos_proyecto.listaProductos.domain.model.ListaProductos
 import kotlinx.coroutines.launch
 
-class ProductosViewModel (
+class ProductosViewModel(
     private val obtenerProductosUseCase: ObtenerProductosUseCase
-): ViewModel(){
-    private val liveData= MutableLiveData<ProductosState>()
+) : ViewModel() {
+    private val liveData = MutableLiveData<ProductosState>()
 
-    fun getLiveData()= liveData
+    fun getLiveData() = liveData
 
-    fun obtenerProductos(){
+    fun obtenerProductos() {
         liveData.postValue(ProductosState.CargandoProductos)
         viewModelScope.launch {
-            try{
+            try {
                 val result = obtenerProductosUseCase.execute()
                 handleResult(result)
-            } catch  ( exception: Exception){
+            } catch (exception: Exception) {
                 handleError(exception)
             }
         }
@@ -28,12 +28,9 @@ class ProductosViewModel (
 
     private fun handleError(exception: Exception) {
         liveData.postValue(ProductosState.Error(exception))
-
-
     }
 
-    private fun handleResult(result: Productos) {
+    private fun handleResult(result: ListaProductos) {
         liveData.postValue(ProductosState.ObtenerTodosLosProductos(result))
-
     }
 }

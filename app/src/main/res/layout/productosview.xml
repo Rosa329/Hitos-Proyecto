@@ -8,10 +8,10 @@
     android:layout_marginTop="@dimen/dp14">
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/iv_simbolo_dolar"
+        android:id="@+id/iv_producto"
         android:layout_width="wrap_content"
         android:layout_height="113dp"
-        android:background="@mipmap/ic_popokicolor" />
+        android:src="@drawable/ic_usuario"/>
 
     <LinearLayout
         android:layout_width="wrap_content"

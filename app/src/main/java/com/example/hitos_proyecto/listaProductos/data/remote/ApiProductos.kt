@@ -4,6 +4,6 @@ import retrofit2.http.GET
 
 interface ApiProductos {
 
-    @GET("generation")
-    suspend fun obtenerProducto (): List<InfoProductoModel>
+    @GET("character")
+    suspend fun obtenerProducto(): ProductoModel
 }

@@ -29,5 +29,17 @@
         android:id="@+id/productosFragment"
         android:name="com.example.hitos_proyecto.listaProductos.ui.ProductosFragment"
         android:label="fragment_productos"
-        tools:layout="@layout/fragment_productos" />
+        tools:layout="@layout/fragment_productos" >
+        <action
+            android:id="@+id/action_productosFragment_to_detalleFragment"
+            app:destination="@id/detalleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detalleFragment"
+        android:name="com.example.hitos_proyecto.detalleProductos.ui.DetalleFragment"
+        android:label="DetalleFragment" >
+        <action
+            android:id="@+id/action_detalleFragment_to_productosFragment"
+            app:destination="@id/productosFragment" />
+    </fragment>
 </navigation>

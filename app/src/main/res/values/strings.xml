@@ -19,5 +19,6 @@
     <string name="direccion">Dirección</string>
     <string name="ingresar_direccion">Ingresar Dirección</string>
     <string name="cd_foto_producto">cd foto producto</string>
+    <string name="agregar">Agregar</string>
 
 </resources>

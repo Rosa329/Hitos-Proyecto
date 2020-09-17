@@ -31,7 +31,7 @@
             android:layout_width="@dimen/dp30"
             android:layout_marginTop="@dimen/dp15"
             android:layout_height="@dimen/dp30"
-            android:src="@mipmap/ic_iconousuario"
+            android:src="@drawable/ic_usuario"
             />
         <Space
             android:layout_width="@dimen/dp10"
@@ -63,7 +63,7 @@
         android:layout_width="@dimen/dp30"
         android:layout_height="@dimen/dp30"
         android:layout_marginTop="@dimen/dp10"
-        android:src="@mipmap/ic_contrasena"
+        android:src="@drawable/ic_candado"
         />
     <Space
         android:layout_width="@dimen/dp10"
